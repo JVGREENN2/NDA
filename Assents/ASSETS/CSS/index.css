@@ -1,0 +1,190 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{min-height: 100vh;
+     background: url(../IMAGES/background.jpeg);
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0;}
+.CONTAINER{
+display: inline-table;
+align-items: end;
+justify-content: end;
+width: 1200px;
+height: 650px;
+background: rgba(255, 255, 255, .1);
+box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
+border-radius: 40px;
+border: 3px solid rgba(255, 255, 255, .5);
+border-right: 3px solid rgba(255, 255, 255, .2);
+border-bottom: 3px solid rgba(255, 255, 255, .2);
+backdrop-filter: blur(10px);}
+.BUTTONS{display: flex;}
+.CONTENT{display: none;width: 1200px; height: 650px;}
+.CONTENT.SHOW{
+    display: inline-table;
+    align-items: end;
+    justify-content: end;
+    background-color: #a5b4fc;
+    opacity: 0.3;
+    border-radius: 0px 0px 40px 40px;}
+.TAB-BTN{
+    width: 100%;
+    border: solid 2px;
+    color: #020617;
+    background-color: #a5b4fc;
+    opacity: 0.3;
+    border-radius: 180px 180px 0px 0px;
+    font-weight: 500;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;}
+.TAB-BTN:active{
+    background-color: rgba(255, 255, 255, .1);
+    opacity: 0.3;}
+.TAB-BTN:hover{
+    background-color: #a5b4fc;
+    opacity: 0.7;}
+.SITES{
+    width: 200px;
+    height: 150px;
+    background-color: #FFFFFF; 
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: 5px solid #000;
+    outline: 5px solid #FFFFFF;
+    line-height: 150px; 
+    margin: 10px; 
+    float: left;}
+.TITULO{background: #000;}
+
+
+
+
+
+
+.content-img {
+    width: 50%;
+    height: 25px;
+}
+
+img{
+    width: 150px;
+    height: 100px;
+}
+.youpin{
+    width: 200px;
+    height: 150px;
+    background-color: #FFFFFF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: 5px solid #000;
+    outline: 5px solid #FF0000;
+    line-height: 150px; 
+    margin: 10px; 
+    float: left; 
+}
+.twitter{
+    width: 200px;
+    height: 150px;
+    background-color: #FFFFFF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: 5px solid #000;
+    outline: 5px solid #00CCFF;
+    line-height: 150px; 
+    margin: 10px; 
+    float: left; 
+}
+.google{
+width: 200px;
+height: 150px;
+background-color: #FFFFFF; 
+color: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10%;
+line-height: 150px; 
+margin: 10px; 
+float: left; 
+outline: 5px solid #000;
+border-right: 5px solid #FF0000;
+border-left: 5px solid #0033CC;
+border-top: 5px solid #00994D;
+border-bottom: 5px solid #FFFF66;
+}
+.facebook{
+    width: 200px;
+    height: 150px;
+    background-color: #FFFFFF; 
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: 5px solid #000;
+    outline: 5px solid #3333FF;
+    line-height: 150px; 
+    margin: 10px; 
+    float: left; 
+    background-color:#FFFFFF; 
+    color: #000;
+}
+.instagram{
+    width: 200px;
+    height: 150px;
+    background-color: #FFFFFF; 
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: 5px solid #000;
+    outline: 5px solid #CC33FF;
+    line-height: 150px; 
+    margin: 10px; 
+    float: left; 
+}
+.github{
+    width: 200px;
+    height: 150px;
+    background-color: #FFFFFF; 
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    border: 5px solid #000;
+    outline: 5px solid #FFFFFF;
+    line-height: 150px; 
+    margin: 10px; 
+    float: left; 
+}
+.ia{
+        width: 200px;
+        height: 150px;
+        background-color: #000; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        border: 5px solid #FFFFFF;
+        outline: 5px solid #012004;
+        line-height: 150px; 
+        margin: 10px; 
+        float: left; 
+        color: white;
+}
+@media screen and (max-width: 600px) {
+body{display: flex; justify-content: center; align-items: center; width: 60vh;}
+.CONTAINER{width: 350px;}
+.CONTENT{width: 350px;}}

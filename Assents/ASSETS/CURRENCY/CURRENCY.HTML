@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CURRENCY.CSS" />
+    <title>CONVERSOR DE CAMBIO</title>
+</head>
+<body>
+<h5 class="heading">CONVERSOR DE CAMBIO</h5>
+<div class="wrapper">
+    <p>TAXA DE CÂMBIO</p>
+    <p id="rate">000</p>
+    <label for="amount">QUANTIA</label>
+    <input type="text" id="amount" value="" />
+    <div class="fromto">
+        <div class="from">
+            <label for="from">DE</label>
+            <div class="select" id="from">
+                <img src="EUA.png" alt="Country flag"/>
+                <span>USD</span>
+                <i class="fa-solid fa-caret-down"></i>
+                <ul></ul>
+            </div>
+        </div>
+        <i id="convert-icon" class="fa-solid fa-arrow-right-arrow-left"></i>
+        <div class="to">
+            <label for="to">PARA</label>
+            <div class="select" id="to">
+                <img src="EUA.png" alt="Country flag" />
+                <span>USD</span>
+                <i class="fa-solid fa-caret-down"></i>
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+    <button class="convert-btn">CONVERTER</button>
+</div>
+<script src="CURRENCY.JS"></script>
+</body>
+</html>
