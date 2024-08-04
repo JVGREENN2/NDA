@@ -11,8 +11,6 @@ body{min-height: 100vh;
 display: inline-table;
 align-items: end;
 justify-content: end;
-width: 1200px;
-height: 650px;
 background: rgba(255, 255, 255, .1);
 box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
 border-radius: 40px;
@@ -26,6 +24,8 @@ backdrop-filter: blur(10px);}
     display: inline-table;
     align-items: end;
     justify-content: end;
+    width: 1000px;
+    height: 500px;
     background-color: #a5b4fc;
     opacity: 0.3;
     border-radius: 0px 0px 40px 40px;}
@@ -47,7 +47,7 @@ backdrop-filter: blur(10px);}
     background-color: #a5b4fc;
     opacity: 0.7;}
 .SITES{
-    width: 200px;
+    width: 180px;
     height: 150px;
     background-color: #FFFFFF; 
     color: #000;
@@ -61,21 +61,11 @@ backdrop-filter: blur(10px);}
     margin: 10px; 
     float: left;}
 .TITULO{background: #000;}
+img{width: 170px;height: 100px;}
 
 
 
 
-
-
-.content-img {
-    width: 50%;
-    height: 25px;
-}
-
-img{
-    width: 150px;
-    height: 100px;
-}
 .youpin{
     width: 200px;
     height: 150px;
@@ -184,7 +174,7 @@ border-bottom: 5px solid #FFFF66;
         float: left; 
         color: white;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 350px) {
 body{display: flex; justify-content: center; align-items: center; width: 60vh;}
 .CONTAINER{width: 350px;}
 .CONTENT{width: 350px;}}
