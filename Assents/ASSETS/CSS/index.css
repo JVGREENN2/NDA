@@ -31,6 +31,7 @@ body {
     display: flex;
 }
 
+/* Ajuste nas dimensões e visibilidade do conteúdo */
 .CONTENT {
     display: none;
     width: 1200px;
@@ -38,22 +39,23 @@ body {
 }
 
 .CONTENT.SHOW {
-    display: inline-table;
-    align-items: end;
-    justify-content: end;
+    display: flex; /* Flexbox para melhor alinhamento */
+    align-items: center;
+    justify-content: center;
     width: 1000px;
     height: 500px;
     background-color: #a5b4fc;
-    opacity: 0.3;
+    opacity: 1; /* Removendo a opacidade reduzida */
     border-radius: 0px 0px 40px 40px;
 }
 
+/* Opacidade ajustada */
 .TAB-BTN {
     width: 100%;
     border: solid 2px;
     color: #020617;
     background-color: #a5b4fc;
-    opacity: 0.3;
+    opacity: 0.9; /* Maior opacidade */
     border-radius: 180px 180px 0px 0px;
     font-weight: 500;
     padding: 8px;
@@ -62,8 +64,8 @@ body {
 }
 
 .TAB-BTN:active {
-    background-color: rgba(255, 255, 255, 0.1);
-    opacity: 0.3;
+    background-color: rgba(255, 255, 255, 0.5); /* Ajuste na cor de fundo e opacidade */
+    opacity: 0.9;
 }
 
 .TAB-BTN:hover {
@@ -83,9 +85,10 @@ body {
     border-radius: 10%;
     border: 5px solid #000;
     outline: 5px solid #FFFFFF;
-    line-height: 150px;
     margin: 10px;
-    float: left;
+    /* Removendo float */
+    float: none;
+    display: inline-flex;
 }
 
 .TITULO {
@@ -93,8 +96,8 @@ body {
 }
 
 img {
-    width: 170px;
-    height: 100px;
+    max-width: 100%; /* Responsividade da imagem */
+    height: auto;
 }
 
 .youpin {
