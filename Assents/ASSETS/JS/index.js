@@ -20,3 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
         tabClicked(currentActiveTab);
     }
 });
+        document.addEventListener("DOMContentLoaded", function() {
+            const favicons = document.querySelectorAll('.favicon');
+            favicons.forEach(favicon => {
+                const url = favicon.getAttribute('data-url');
+                const faviconUrl = new URL('/favicon.ico', url).href;
+                favicon.src = faviconUrl;
+            });
+        });
