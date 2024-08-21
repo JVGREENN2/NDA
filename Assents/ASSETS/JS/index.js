@@ -20,12 +20,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentActiveTab) {
         tabClicked(currentActiveTab);
     }
-
-    // Favicon Fetching Logic
-    const favicons = document.querySelectorAll('.favicon');
-    favicons.forEach(favicon => {
-        const url = favicon.getAttribute('data-url');
-        const faviconUrl = new URL('/favicon.ico', url).href;
-        favicon.src = faviconUrl;
-    });
 });
