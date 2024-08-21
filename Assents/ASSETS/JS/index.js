@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Tab Switching Logic
     const tabs = document.querySelectorAll('.TAB-BTN');
 
     const tabClicked = (tab) => {
@@ -19,12 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentActiveTab) {
         tabClicked(currentActiveTab);
     }
+
+    // Favicon Fetching Logic
+    const favicons = document.querySelectorAll('.favicon');
+    favicons.forEach(favicon => {
+        const url = favicon.getAttribute('data-url');
+        const faviconUrl = new URL('/favicon.ico', url).href;
+        favicon.src = faviconUrl;
+    });
 });
-        document.addEventListener("DOMContentLoaded", function() {
-            const favicons = document.querySelectorAll('.favicon');
-            favicons.forEach(favicon => {
-                const url = favicon.getAttribute('data-url');
-                const faviconUrl = new URL('/favicon.ico', url).href;
-                favicon.src = faviconUrl;
-            });
-        });
